@@ -1,5 +1,5 @@
 import express from 'express'
-import { signup, login, logout} from '../controllers/auth.js'
+import { signup, login, logout, getSignup} from '../controllers/auth.js'
 
 
 
@@ -9,6 +9,7 @@ router.post('/login', login )
 
 
 router.post('/signup', signup)
+router.get('/signup', getSignup)
 
 router.post('/logout', logout)
 
