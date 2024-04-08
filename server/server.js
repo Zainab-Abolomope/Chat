@@ -1,8 +1,12 @@
 import express from "express"
 import dotenv from "dotenv"
 import authRoutes from './routes/auth.js'
+import messageRoutes from './routes/message.js'
+import userRoutes from './routes/user.js'
 import mongoose from "mongoose"
-import bodyParser from 'body-parser'
+// import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser'
+
 dotenv.config()
 
 const app = express()
@@ -20,8 +24,11 @@ mongoose.connect(process.env.MONGO_URL).then(()=>{
 // })
 app.use(express.json())  
 app.use(express.urlencoded({extended: false}))
+app.use(cookieParser())
 
 app.use('/api/auth', authRoutes);
+app.use('/api/messages', messageRoutes);
+app.use('/api/users', userRoutes);
 // to parse the incoming requests with JSON payloads(from req.body)
 
 

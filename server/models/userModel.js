@@ -34,7 +34,8 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     }
-})
+}, {timestamps:true})
+// createdAt, updatedAT => Member since createdAt
 
 const User = mongoose.model("User", userSchema)
 

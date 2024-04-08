@@ -3,6 +3,7 @@ import { signup, login, logout, getSignup, getLogin, getLogout} from '../control
 
 
 
+
 const router = express.Router()
 
 router.post('/login', login )
