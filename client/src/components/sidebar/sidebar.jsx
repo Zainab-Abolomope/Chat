@@ -1,5 +1,5 @@
 import SearchInput from './search'
-import Conversations from './conversation'
+import Conversations from './conversations'
 import LogoutButton from './logout'
 
 

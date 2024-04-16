@@ -11,3 +11,23 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+	background: white;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424;
+}
