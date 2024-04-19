@@ -12,6 +12,7 @@ router.post('/login', login )
 router.post('/signup', signup)
 router.get('/signup', getSignup)
 router.get('/login', getLogin)
+router.post('/login', login)
 router.get('/logout', getLogout)
 
 router.post('/logout', logout)

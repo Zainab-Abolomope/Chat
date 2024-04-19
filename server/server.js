@@ -29,6 +29,14 @@ app.use(cookieParser())
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/users', userRoutes);
+
+// app.use((req, res, next) => {
+//     res.setHeader('Access-Control-Allow-Origin', '*'); // or specific origin
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//     next();
+//   });
+  
 // to parse the incoming requests with JSON payloads(from req.body)
 
 
